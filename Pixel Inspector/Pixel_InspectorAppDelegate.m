@@ -3,7 +3,7 @@
 //  Pixel Inspector
 //
 //  Created by Ben K on 2011/08/12.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  All code is provided under the New BSD license.
 //
 
 #import "Pixel_InspectorAppDelegate.h"

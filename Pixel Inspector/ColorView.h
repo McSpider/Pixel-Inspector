@@ -2,8 +2,8 @@
 //  ColorView.h
 //  Pixel Inspector
 //
-//  Created by Benjamin Kohler on 12/06/19.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//  Created by Ben K on 12/06/19.
+//  All code is provided under the New BSD license.
 //
 
 #import <Cocoa/Cocoa.h>
