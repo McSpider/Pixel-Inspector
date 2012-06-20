@@ -6,4 +6,4 @@ A very simple tool to check for dead or stuck pixels.
 
 
 ### Credits
-`TransparentWindow.h/m` by [Matt Gremmell](http://mattgemmell.com/source/)
+`TransparentWindow.h/m` by [Matt Gemmell](http://mattgemmell.com/source/)
