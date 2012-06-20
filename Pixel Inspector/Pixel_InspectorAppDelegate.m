@@ -7,7 +7,6 @@
 //
 
 #import "Pixel_InspectorAppDelegate.h"
-#import <QuartzCore/QuartzCore.h>
 
 @implementation Pixel_InspectorAppDelegate
 
@@ -15,12 +14,12 @@
 
 - (void)awakeFromNib
 {  
-  //[[self window] setLevel:NSNormalWindowLevel];
   hue = 8;
   saturation = 4;
   colorMode = NO;
   [[self window] center];
   [[self window] setFrameOrigin:NSMakePoint(self.window.frame.origin.x, [[NSScreen mainScreen] frame].size.height * 0.4)];
+  //[[self window] setLevel:NSNormalWindowLevel];
   
   fullWindow = [[TransparentWindow alloc] initWithContentRect:[[NSScreen mainScreen] frame]
                                                      styleMask:NSBorderlessWindowMask
@@ -37,6 +36,8 @@
   [fullWindow setAlphaValue:0.0f];
   [fullWindow orderFront:nil];
   [fullWindow setDelegate:self];  
+  
+  //[self.window makeKeyAndOrderFront:self];
 }
 
 - (void)dealloc
@@ -45,10 +46,6 @@
   [super dealloc];
 }
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-  // Insert code here to initialize your application
-}
 
 - (void)windowDidResignKey:(NSNotification *)notification
 {
@@ -63,7 +60,6 @@
     [self closeColorWindow];
   }
 }
-
 
 
 - (IBAction)testColor:(id)sender

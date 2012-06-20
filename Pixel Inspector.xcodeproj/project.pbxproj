@@ -32,7 +32,6 @@
 		AEDC8DED15910CAA0017D8E5 /* Close_a.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DEB15910CAA0017D8E5 /* Close_a.png */; };
 		AEDC8DEE15910CAA0017D8E5 /* Close.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DEC15910CAA0017D8E5 /* Close.png */; };
 		AEDC8DF0159110DC0017D8E5 /* Rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DEF159110DC0017D8E5 /* Rainbow.png */; };
-		AEDC8DF4159112FF0017D8E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDC8DF3159112FF0017D8E5 /* QuartzCore.framework */; };
 		AEDC8DFA159122B00017D8E5 /* DelegateView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDC8DF9159122B00017D8E5 /* DelegateView.m */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +70,6 @@
 		AEDC8DEB15910CAA0017D8E5 /* Close_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close_a.png; sourceTree = "<group>"; };
 		AEDC8DEC15910CAA0017D8E5 /* Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close.png; sourceTree = "<group>"; };
 		AEDC8DEF159110DC0017D8E5 /* Rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rainbow.png; sourceTree = "<group>"; };
-		AEDC8DF3159112FF0017D8E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AEDC8DF8159122B00017D8E5 /* DelegateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateView.h; sourceTree = "<group>"; };
 		AEDC8DF9159122B00017D8E5 /* DelegateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEDC8DF4159112FF0017D8E5 /* QuartzCore.framework in Frameworks */,
 				AED7E2C113F61C4600A97DCF /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +130,6 @@
 		AED7E2BF13F61C4600A97DCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AEDC8DF3159112FF0017D8E5 /* QuartzCore.framework */,
 				AED7E2C013F61C4600A97DCF /* Cocoa.framework */,
 				AED7E2C213F61C4600A97DCF /* Other Frameworks */,
 			);
