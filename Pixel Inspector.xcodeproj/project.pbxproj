@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AED7E2C113F61C4600A97DCF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED7E2C013F61C4600A97DCF /* Cocoa.framework */; };
+		AED7E2CB13F61C4600A97DCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AED7E2C913F61C4600A97DCF /* InfoPlist.strings */; };
+		AED7E2CE13F61C4600A97DCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AED7E2CD13F61C4600A97DCF /* main.m */; };
+		AED7E2D113F61C4600A97DCF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AED7E2CF13F61C4600A97DCF /* Credits.rtf */; };
+		AED7E2D413F61C4600A97DCF /* Pixel_InspectorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AED7E2D313F61C4600A97DCF /* Pixel_InspectorAppDelegate.m */; };
+		AED7E2D713F61C4600A97DCF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AED7E2D513F61C4600A97DCF /* MainMenu.xib */; };
+		AEDC8DD81591012E0017D8E5 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DD31591012E0017D8E5 /* Black.png */; };
+		AEDC8DD91591012E0017D8E5 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DD41591012E0017D8E5 /* Blue.png */; };
+		AEDC8DDA1591012E0017D8E5 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DD51591012E0017D8E5 /* Green.png */; };
+		AEDC8DDB1591012E0017D8E5 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DD61591012E0017D8E5 /* Red.png */; };
+		AEDC8DDC1591012E0017D8E5 /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DD71591012E0017D8E5 /* White.png */; };
+		AEDC8DE3159105AE0017D8E5 /* TransparentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDC8DE2159105AE0017D8E5 /* TransparentWindow.m */; };
+		AEDC8DE5159107750017D8E5 /* Red_s.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DE4159107750017D8E5 /* Red_s.png */; };
+		AEDC8DE8159107D00017D8E5 /* KBLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDC8DE7159107D00017D8E5 /* KBLabel.m */; };
+		AEDC8DEA1591096F0017D8E5 /* Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DE91591096F0017D8E5 /* Bar.png */; };
+		AEDC8DED15910CAA0017D8E5 /* Close_a.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DEB15910CAA0017D8E5 /* Close_a.png */; };
+		AEDC8DEE15910CAA0017D8E5 /* Close.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DEC15910CAA0017D8E5 /* Close.png */; };
+		AEDC8DF0159110DC0017D8E5 /* Rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = AEDC8DEF159110DC0017D8E5 /* Rainbow.png */; };
+		AEDC8DF4159112FF0017D8E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDC8DF3159112FF0017D8E5 /* QuartzCore.framework */; };
+		AEDC8DFA159122B00017D8E5 /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDC8DF9159122B00017D8E5 /* ColorView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AED7E2BC13F61C4600A97DCF /* Pixel Inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel Inspector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED7E2C013F61C4600A97DCF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AED7E2C313F61C4600A97DCF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AED7E2C413F61C4600A97DCF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AED7E2C513F61C4600A97DCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AED7E2C813F61C4600A97DCF /* Pixel Inspector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pixel Inspector-Info.plist"; sourceTree = "<group>"; };
+		AED7E2CA13F61C4600A97DCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AED7E2CC13F61C4600A97DCF /* Pixel Inspector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pixel Inspector-Prefix.pch"; sourceTree = "<group>"; };
+		AED7E2CD13F61C4600A97DCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AED7E2D013F61C4600A97DCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AED7E2D213F61C4600A97DCF /* Pixel_InspectorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pixel_InspectorAppDelegate.h; sourceTree = "<group>"; };
+		AED7E2D313F61C4600A97DCF /* Pixel_InspectorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pixel_InspectorAppDelegate.m; sourceTree = "<group>"; };
+		AED7E2D613F61C4600A97DCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AEDC8DD31591012E0017D8E5 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
+		AEDC8DD41591012E0017D8E5 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
+		AEDC8DD51591012E0017D8E5 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		AEDC8DD61591012E0017D8E5 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		AEDC8DD71591012E0017D8E5 /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = "<group>"; };
+		AEDC8DE1159105AE0017D8E5 /* TransparentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentWindow.h; sourceTree = "<group>"; };
+		AEDC8DE2159105AE0017D8E5 /* TransparentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentWindow.m; sourceTree = "<group>"; };
+		AEDC8DE4159107750017D8E5 /* Red_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red_s.png; sourceTree = "<group>"; };
+		AEDC8DE6159107D00017D8E5 /* KBLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBLabel.h; sourceTree = "<group>"; };
+		AEDC8DE7159107D00017D8E5 /* KBLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBLabel.m; sourceTree = "<group>"; };
+		AEDC8DE91591096F0017D8E5 /* Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bar.png; sourceTree = "<group>"; };
+		AEDC8DEB15910CAA0017D8E5 /* Close_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close_a.png; sourceTree = "<group>"; };
+		AEDC8DEC15910CAA0017D8E5 /* Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close.png; sourceTree = "<group>"; };
+		AEDC8DEF159110DC0017D8E5 /* Rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rainbow.png; sourceTree = "<group>"; };
+		AEDC8DF3159112FF0017D8E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AEDC8DF8159122B00017D8E5 /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
+		AEDC8DF9159122B00017D8E5 /* ColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AED7E2B913F61C4600A97DCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDC8DF4159112FF0017D8E5 /* QuartzCore.framework in Frameworks */,
+				AED7E2C113F61C4600A97DCF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AED7E2B113F61C4600A97DCF = {
+			isa = PBXGroup;
+			children = (
+				AED7E2C613F61C4600A97DCF /* Pixel Inspector */,
+				AED7E2BF13F61C4600A97DCF /* Frameworks */,
+				AED7E2BD13F61C4600A97DCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AED7E2BD13F61C4600A97DCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AED7E2BC13F61C4600A97DCF /* Pixel Inspector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AED7E2BF13F61C4600A97DCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEDC8DF3159112FF0017D8E5 /* QuartzCore.framework */,
+				AED7E2C013F61C4600A97DCF /* Cocoa.framework */,
+				AED7E2C213F61C4600A97DCF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AED7E2C213F61C4600A97DCF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AED7E2C313F61C4600A97DCF /* AppKit.framework */,
+				AED7E2C413F61C4600A97DCF /* CoreData.framework */,
+				AED7E2C513F61C4600A97DCF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AED7E2C613F61C4600A97DCF /* Pixel Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				AED7E2D213F61C4600A97DCF /* Pixel_InspectorAppDelegate.h */,
+				AED7E2D313F61C4600A97DCF /* Pixel_InspectorAppDelegate.m */,
+				AEDC8DE1159105AE0017D8E5 /* TransparentWindow.h */,
+				AEDC8DE2159105AE0017D8E5 /* TransparentWindow.m */,
+				AEDC8DF8159122B00017D8E5 /* ColorView.h */,
+				AEDC8DF9159122B00017D8E5 /* ColorView.m */,
+				AEDC8DE6159107D00017D8E5 /* KBLabel.h */,
+				AEDC8DE7159107D00017D8E5 /* KBLabel.m */,
+				AED7E2D513F61C4600A97DCF /* MainMenu.xib */,
+				AEDC8DD31591012E0017D8E5 /* Black.png */,
+				AEDC8DD41591012E0017D8E5 /* Blue.png */,
+				AEDC8DD51591012E0017D8E5 /* Green.png */,
+				AEDC8DD61591012E0017D8E5 /* Red.png */,
+				AEDC8DE4159107750017D8E5 /* Red_s.png */,
+				AEDC8DD71591012E0017D8E5 /* White.png */,
+				AEDC8DEF159110DC0017D8E5 /* Rainbow.png */,
+				AEDC8DE91591096F0017D8E5 /* Bar.png */,
+				AEDC8DEB15910CAA0017D8E5 /* Close_a.png */,
+				AEDC8DEC15910CAA0017D8E5 /* Close.png */,
+				AED7E2C713F61C4600A97DCF /* Supporting Files */,
+			);
+			path = "Pixel Inspector";
+			sourceTree = "<group>";
+		};
+		AED7E2C713F61C4600A97DCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AED7E2C813F61C4600A97DCF /* Pixel Inspector-Info.plist */,
+				AED7E2C913F61C4600A97DCF /* InfoPlist.strings */,
+				AED7E2CC13F61C4600A97DCF /* Pixel Inspector-Prefix.pch */,
+				AED7E2CD13F61C4600A97DCF /* main.m */,
+				AED7E2CF13F61C4600A97DCF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AED7E2BB13F61C4600A97DCF /* Pixel Inspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED7E2DA13F61C4600A97DCF /* Build configuration list for PBXNativeTarget "Pixel Inspector" */;
+			buildPhases = (
+				AED7E2B813F61C4600A97DCF /* Sources */,
+				AED7E2B913F61C4600A97DCF /* Frameworks */,
+				AED7E2BA13F61C4600A97DCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pixel Inspector";
+			productName = "Pixel Inspector";
+			productReference = AED7E2BC13F61C4600A97DCF /* Pixel Inspector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AED7E2B313F61C4600A97DCF /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = AED7E2B613F61C4600A97DCF /* Build configuration list for PBXProject "Pixel Inspector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AED7E2B113F61C4600A97DCF;
+			productRefGroup = AED7E2BD13F61C4600A97DCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AED7E2BB13F61C4600A97DCF /* Pixel Inspector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AED7E2BA13F61C4600A97DCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED7E2CB13F61C4600A97DCF /* InfoPlist.strings in Resources */,
+				AED7E2D113F61C4600A97DCF /* Credits.rtf in Resources */,
+				AED7E2D713F61C4600A97DCF /* MainMenu.xib in Resources */,
+				AEDC8DD81591012E0017D8E5 /* Black.png in Resources */,
+				AEDC8DD91591012E0017D8E5 /* Blue.png in Resources */,
+				AEDC8DDA1591012E0017D8E5 /* Green.png in Resources */,
+				AEDC8DDB1591012E0017D8E5 /* Red.png in Resources */,
+				AEDC8DDC1591012E0017D8E5 /* White.png in Resources */,
+				AEDC8DE5159107750017D8E5 /* Red_s.png in Resources */,
+				AEDC8DEA1591096F0017D8E5 /* Bar.png in Resources */,
+				AEDC8DED15910CAA0017D8E5 /* Close_a.png in Resources */,
+				AEDC8DEE15910CAA0017D8E5 /* Close.png in Resources */,
+				AEDC8DF0159110DC0017D8E5 /* Rainbow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AED7E2B813F61C4600A97DCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED7E2CE13F61C4600A97DCF /* main.m in Sources */,
+				AED7E2D413F61C4600A97DCF /* Pixel_InspectorAppDelegate.m in Sources */,
+				AEDC8DE3159105AE0017D8E5 /* TransparentWindow.m in Sources */,
+				AEDC8DE8159107D00017D8E5 /* KBLabel.m in Sources */,
+				AEDC8DFA159122B00017D8E5 /* ColorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AED7E2C913F61C4600A97DCF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AED7E2CA13F61C4600A97DCF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AED7E2CF13F61C4600A97DCF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AED7E2D013F61C4600A97DCF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AED7E2D513F61C4600A97DCF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AED7E2D613F61C4600A97DCF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AED7E2D813F61C4600A97DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AED7E2D913F61C4600A97DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AED7E2DB13F61C4600A97DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixel Inspector/Pixel Inspector-Prefix.pch";
+				INFOPLIST_FILE = "Pixel Inspector/Pixel Inspector-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AED7E2DC13F61C4600A97DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixel Inspector/Pixel Inspector-Prefix.pch";
+				INFOPLIST_FILE = "Pixel Inspector/Pixel Inspector-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AED7E2B613F61C4600A97DCF /* Build configuration list for PBXProject "Pixel Inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED7E2D813F61C4600A97DCF /* Debug */,
+				AED7E2D913F61C4600A97DCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED7E2DA13F61C4600A97DCF /* Build configuration list for PBXNativeTarget "Pixel Inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED7E2DB13F61C4600A97DCF /* Debug */,
+				AED7E2DC13F61C4600A97DCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AED7E2B313F61C4600A97DCF /* Project object */;
+}

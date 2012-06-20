@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Pixel Inspector' target in the 'Pixel Inspector' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+#endif
