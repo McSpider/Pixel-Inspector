@@ -963,11 +963,14 @@
 								<reference key="NSControlView" ref="199826563"/>
 								<int key="NSButtonFlags">139215103</int>
 								<int key="NSButtonFlags2">34</int>
-								<object class="NSCustomResource" key="NSNormalImage" id="657798876">
+								<object class="NSCustomResource" key="NSNormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">Red</string>
 								</object>
-								<reference key="NSAlternateImage" ref="657798876"/>
+								<object class="NSCustomResource" key="NSAlternateImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">Red_s</string>
+								</object>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
@@ -993,11 +996,14 @@
 								<reference key="NSControlView" ref="659882207"/>
 								<int key="NSButtonFlags">139215103</int>
 								<int key="NSButtonFlags2">34</int>
-								<object class="NSCustomResource" key="NSNormalImage" id="187417211">
+								<object class="NSCustomResource" key="NSNormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">Green</string>
 								</object>
-								<reference key="NSAlternateImage" ref="187417211"/>
+								<object class="NSCustomResource" key="NSAlternateImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">Green_s</string>
+								</object>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
@@ -1023,11 +1029,14 @@
 								<reference key="NSControlView" ref="190157025"/>
 								<int key="NSButtonFlags">139215103</int>
 								<int key="NSButtonFlags2">34</int>
-								<object class="NSCustomResource" key="NSNormalImage" id="271573073">
+								<object class="NSCustomResource" key="NSNormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">Blue</string>
 								</object>
-								<reference key="NSAlternateImage" ref="271573073"/>
+								<object class="NSCustomResource" key="NSAlternateImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">Blue_s</string>
+								</object>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
@@ -1053,11 +1062,14 @@
 								<reference key="NSControlView" ref="507739774"/>
 								<int key="NSButtonFlags">139215103</int>
 								<int key="NSButtonFlags2">34</int>
-								<object class="NSCustomResource" key="NSNormalImage" id="482377184">
+								<object class="NSCustomResource" key="NSNormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">White</string>
 								</object>
-								<reference key="NSAlternateImage" ref="482377184"/>
+								<object class="NSCustomResource" key="NSAlternateImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">White_s</string>
+								</object>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
@@ -1083,11 +1095,14 @@
 								<reference key="NSControlView" ref="280772039"/>
 								<int key="NSButtonFlags">139215103</int>
 								<int key="NSButtonFlags2">34</int>
-								<object class="NSCustomResource" key="NSNormalImage" id="388230596">
+								<object class="NSCustomResource" key="NSNormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">Black</string>
 								</object>
-								<reference key="NSAlternateImage" ref="388230596"/>
+								<object class="NSCustomResource" key="NSAlternateImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">Black_s</string>
+								</object>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
@@ -1178,11 +1193,14 @@
 								<reference key="NSControlView" ref="841088531"/>
 								<int key="NSButtonFlags">139215103</int>
 								<int key="NSButtonFlags2">34</int>
-								<object class="NSCustomResource" key="NSNormalImage" id="269118949">
+								<object class="NSCustomResource" key="NSNormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">Rainbow</string>
 								</object>
-								<reference key="NSAlternateImage" ref="269118949"/>
+								<object class="NSCustomResource" key="NSAlternateImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">Rainbow_s</string>
+								</object>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
@@ -1192,7 +1210,7 @@
 						<object class="NSTextField" id="627729275">
 							<reference key="NSNextResponder" ref="392037490"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{233, 5}, {16, 14}}</string>
+							<string key="NSFrame">{{231, 5}, {16, 14}}</string>
 							<reference key="NSSuperview" ref="392037490"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
@@ -1218,6 +1236,7 @@
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
+				<int key="NSWindowCollectionBehavior">4</int>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
 		</object>
@@ -3045,26 +3064,38 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>Bar</string>
 				<string>Black</string>
+				<string>Black_s</string>
 				<string>Blue</string>
+				<string>Blue_s</string>
 				<string>Close</string>
 				<string>Close_a</string>
 				<string>Green</string>
+				<string>Green_s</string>
 				<string>NSMenuCheckmark</string>
 				<string>NSMenuMixedState</string>
 				<string>Rainbow</string>
+				<string>Rainbow_s</string>
 				<string>Red</string>
+				<string>Red_s</string>
 				<string>White</string>
+				<string>White_s</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{254, 22}</string>
 				<string>{30, 30}</string>
 				<string>{30, 30}</string>
+				<string>{30, 30}</string>
+				<string>{30, 30}</string>
 				<string>{14, 15}</string>
 				<string>{14, 15}</string>
 				<string>{30, 30}</string>
+				<string>{30, 30}</string>
 				<string>{9, 8}</string>
 				<string>{7, 2}</string>
+				<string>{30, 30}</string>
+				<string>{30, 30}</string>
+				<string>{30, 30}</string>
 				<string>{30, 30}</string>
 				<string>{30, 30}</string>
 				<string>{30, 30}</string>
