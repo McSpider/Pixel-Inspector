@@ -17,54 +17,42 @@
 		return nil;
   
   // Initialization code here.
+  delegate = nil;
   
   return self;
 }
 
 - (void)keyDown:(NSEvent *)theEvent
 {
-  // Override the keyDown method to prevent the default system beep when pressing a key.
+  if ([delegate respondsToSelector:@selector(viewKeyDown:)])
+    [self.delegate viewKeyDown:theEvent];
 }
 
 - (void)keyUp:(NSEvent *)theEvent
-{
-  uint key = 0;
-  
-  NSString *character = [theEvent charactersIgnoringModifiers];
-  unichar code = [character characterAtIndex:0];
+{    
+  if ([delegate respondsToSelector:@selector(viewKeyUp:)])
+    [self.delegate viewKeyUp:theEvent];
+}
 
-  switch (code)  {
-    case NSUpArrowFunctionKey: {
-      key = 1;
-      break;
-    }
-    case NSDownArrowFunctionKey: {
-      key = 2;
-      break;
-    }
-    case NSLeftArrowFunctionKey: {
-      key = 3;
-      break;
-    }
-    case NSRightArrowFunctionKey: {
-      key = 4;
-      break;
-    }
-    case 27: { // Escape key
-      key = 5;
-      break;
-    }
-  }
-  
-  if ([delegate respondsToSelector:@selector(changeViewColor:)] && key != 0)
-    [self.delegate changeViewColor:key];
+
+- (void)mouseDown:(NSEvent *)theEvent
+{
+  if ([delegate respondsToSelector:@selector(viewMouseDown:)])
+    [self.delegate viewMouseDown:theEvent];
 }
 
 - (void)mouseUp:(NSEvent *)theEvent
 {
-  if ([delegate respondsToSelector:@selector(closeColorWindow)])
-    [self.delegate closeColorWindow];
+  if ([delegate respondsToSelector:@selector(viewMouseUp:)])
+    [self.delegate viewMouseUp:theEvent];
 }
+
+- (void)mouseDragged:(NSEvent *)theEvent
+{
+  if ([delegate respondsToSelector:@selector(viewMouseDragged:)])
+    [self.delegate viewMouseDragged:theEvent];
+}
+
 
 - (BOOL)acceptsFirstResponder
 {

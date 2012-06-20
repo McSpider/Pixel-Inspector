@@ -28,6 +28,8 @@
                                                          defer:NO screen:[NSScreen mainScreen]];
   
   [fullWindow setLevel:NSScreenSaverWindowLevel];
+  [fullWindow setIsMovable:NO];
+
   [fullView setWantsLayer:YES];
   [fullView setDelegate:self];
   
@@ -111,36 +113,76 @@
   [[infoMessage animator] setAlphaValue:0.0f];
 }
 
-- (void)changeViewColor:(uint)key;
+- (void)changeViewColor:(uint)color;
 {
-  if (key == 5 && [fullWindow alphaValue] == 1.0f) {
-    [self closeColorWindow];
-    return;
-  }
   if (!colorMode)
     return;
   
-  
-  if (key == 1) {
+  if (color == 1) {
     saturation = saturation - 1;
     if (saturation <= 0)
       saturation = 0;
   }
-  else if (key == 2) {
+  else if (color == 2) {
     saturation = saturation + 1;
     if (saturation >= 4)
       saturation = 4;
   }
-  else if (key == 3) {
+  else if (color == 3) {
     hue = (hue - 1) % 16;
     if (hue < 0)
       hue = 16;
   }
-  else if (key == 4) {
+  else if (color == 4) {
     hue = (hue + 1) % 16;
   }
   
   [fullWindow setBackgroundColor:[NSColor colorWithDeviceHue:hue / 16.0f saturation:saturation / 4.0f brightness:1.0 alpha:1.0]];
 }
+
+
+#pragma mark -
+#pragma mark Delegate View Messages
+
+- (void)viewKeyUp:(NSEvent *)theEvent
+{
+  uint key = 0;
+  
+  NSString *character = [theEvent charactersIgnoringModifiers];
+  unichar code = [character characterAtIndex:0];
+  
+  switch (code)  {
+    case NSUpArrowFunctionKey: {
+      key = 1;
+      break;
+    }
+    case NSDownArrowFunctionKey: {
+      key = 2;
+      break;
+    }
+    case NSLeftArrowFunctionKey: {
+      key = 3;
+      break;
+    }
+    case NSRightArrowFunctionKey: {
+      key = 4;
+      break;
+    }
+    case 27: { // Escape key
+      if ([fullWindow alphaValue] == 1.0f)
+        [self closeColorWindow];
+      break;
+    }
+  }
+  
+  if (key != 0)
+    [self changeViewColor:key];
+}
+
+- (void)viewMouseUp:(NSEvent *)theEvent
+{
+  [self closeColorWindow];
+}
+
 
 @end

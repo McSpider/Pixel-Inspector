@@ -11,8 +11,12 @@
 @protocol DelegateViewDelegate
 @optional
 
-- (void)closeColorWindow;
-- (void)changeViewColor:(uint)key;
+- (void)viewKeyUp:(NSEvent *)theEvent;
+- (void)viewKeyDown:(NSEvent *)theEvent;
+
+- (void)viewMouseUp:(NSEvent *)theEvent;
+- (void)viewMouseDown:(NSEvent *)theEvent;
+- (void)viewMouseDragged:(NSEvent *)theEvent;
 
 @end
 

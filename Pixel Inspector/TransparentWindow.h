@@ -14,8 +14,11 @@
   NSPoint initialLocation;
   int snapMargin;
   int screenMargin;
+  
+  BOOL isMovable;
 }
 
 @property int snapMargin,screenMargin;
+@property BOOL isMovable;
 
 @end
