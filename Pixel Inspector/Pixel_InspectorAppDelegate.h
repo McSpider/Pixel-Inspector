@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ColorView.h"
+#import "DelegateView.h"
 #import "TransparentWindow.h"
 
 @interface Pixel_InspectorAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate> {
@@ -15,7 +15,7 @@
   NSWindow *window;
   TransparentWindow *fullWindow;
 
-  IBOutlet ColorView *fullView;
+  IBOutlet DelegateView *fullView;
   int hue;
   int saturation;
   

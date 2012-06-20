@@ -1,22 +1,22 @@
 //
-//  ColorView.m
+//  DelegateView.m
 //  Pixel Inspector
 //
 //  Created by Ben K on 12/06/19.
 //  All code is provided under the New BSD license.
 //
 
-#import "ColorView.h"
+#import "DelegateView.h"
 
-@implementation ColorView
+@implementation DelegateView
 @synthesize delegate;
 
 - (id)initWithFrame:(NSRect)frame
 {
-  self = [super initWithFrame:frame];
-  if (self) {
-    // Initialization code here.
-  }
+  if (![super initWithFrame:frame])
+		return nil;
+  
+  // Initialization code here.
   
   return self;
 }

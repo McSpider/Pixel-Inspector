@@ -1,5 +1,5 @@
 //
-//  ColorView.h
+//  DelegateView.h
 //  Pixel Inspector
 //
 //  Created by Ben K on 12/06/19.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@protocol ColorViewDelegate
+@protocol DelegateViewDelegate
 @optional
 
 - (void)closeColorWindow;
@@ -16,8 +16,8 @@
 
 @end
 
-@interface ColorView : NSView {
-  id delegate;
+@interface DelegateView : NSView {
+  IBOutlet id delegate;
 }
 
 @property (nonatomic, assign) id delegate;
