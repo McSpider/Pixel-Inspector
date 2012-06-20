@@ -36,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE4DE0D01592722800DBD5C5 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AE5E0C9E15915FBD00B7ED44 /* License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
 		AE5E0C9F15915FBD00B7ED44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		AEB0DE3115916F2500380DE3 /* Black_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black_s.png; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = AED7E2B113F61C4600A97DCF;
 			productRefGroup = AED7E2BD13F61C4600A97DCF /* Products */;
@@ -284,6 +286,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AED7E2D613F61C4600A97DCF /* en */,
+				AE4DE0D01592722800DBD5C5 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
