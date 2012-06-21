@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4629F81592A0B000B1F31E /* App_Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = AE4629F71592A0B000B1F31E /* App_Icon.icns */; };
 		AE5E0CA015915FBD00B7ED44 /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AE5E0C9E15915FBD00B7ED44 /* License.rtf */; };
 		AE5E0CA115915FBD00B7ED44 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE5E0C9F15915FBD00B7ED44 /* README.md */; };
 		AEB0DE3615916F2500380DE3 /* Black_s.png in Resources */ = {isa = PBXBuildFile; fileRef = AEB0DE3115916F2500380DE3 /* Black_s.png */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE4629F71592A0B000B1F31E /* App_Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = App_Icon.icns; path = ../App_Icon.icns; sourceTree = "<group>"; };
+		AE4629F91592A78B00B1F31E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE4DE0D01592722800DBD5C5 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AE5E0C9E15915FBD00B7ED44 /* License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
 		AE5E0C9F15915FBD00B7ED44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -52,7 +55,7 @@
 		AED7E2C513F61C4600A97DCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AED7E2C813F61C4600A97DCF /* Pixel Inspector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pixel Inspector-Info.plist"; sourceTree = "<group>"; };
 		AED7E2CA13F61C4600A97DCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AED7E2CC13F61C4600A97DCF /* Pixel Inspector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pixel Inspector-Prefix.pch"; sourceTree = "<group>"; };
+		AED7E2CC13F61C4600A97DCF /* Pixel Inspector-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pixel Inspector-Prefix.pch"; sourceTree = "<group>"; };
 		AED7E2CD13F61C4600A97DCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AED7E2D013F61C4600A97DCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		AED7E2D213F61C4600A97DCF /* Pixel_InspectorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pixel_InspectorAppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 				AEDC8DE7159107D00017D8E5 /* KBLabel.m */,
 				AED7E2D513F61C4600A97DCF /* MainMenu.xib */,
 				AEB0DE3D159170ED00380DE3 /* Graphics */,
+				AE4629F71592A0B000B1F31E /* App_Icon.icns */,
 				AED7E2C713F61C4600A97DCF /* Supporting Files */,
 			);
 			path = "Pixel Inspector";
@@ -245,6 +249,7 @@
 				AEB0DE3915916F2500380DE3 /* Rainbow_s.png in Resources */,
 				AEB0DE3A15916F2500380DE3 /* White_s.png in Resources */,
 				AEB0DE3C159170A500380DE3 /* Red_s.png in Resources */,
+				AE4629F81592A0B000B1F31E /* App_Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +275,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AED7E2CA13F61C4600A97DCF /* en */,
+				AE4629F91592A78B00B1F31E /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+"CFBundleName" = "Pixel Inspektor";
+"NSHumanReadableCopyright" = "Copyright © 2012 McSpider. Alle Rechte vorbehalten";
