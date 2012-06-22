@@ -15,19 +15,20 @@
 
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag
 {
-	if (![super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO]) {
+  if (![super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO]) {
     return nil;
   }
-    
-	[self setLevel: NSModalPanelWindowLevel];
-	[self setBackgroundColor:[NSColor clearColor]];
-	[self setAlphaValue:1.0];
-	[self setOpaque:NO];
-	[self setHasShadow:NO];
+  
+  [self setLevel: NSModalPanelWindowLevel];
+  [self setBackgroundColor:[NSColor clearColor]];
+  [self setAlphaValue:1.0];
+  [self setOpaque:NO];
+  [self setHasShadow:NO];
   [self setSnapMargin:5];
   [self setScreenMargin:5];
   [self setIsMovable:YES];
-	return self;
+  
+  return self;
 }
 
 
@@ -51,27 +52,27 @@
   NSPoint newOrigin;
   NSRect  screenFrame = [[NSScreen mainScreen] frame];
   NSRect  windowFrame = [self frame];
-	int windowWidth = windowFrame.size.width;
+  int windowWidth = windowFrame.size.width;
   
   currentLocation = [self convertBaseToScreen:[self mouseLocationOutsideOfEventStream]];
   newOrigin.x = currentLocation.x - initialLocation.x;
   newOrigin.y = currentLocation.y - initialLocation.y;
   
   if ((newOrigin.y + windowFrame.size.height) > (NSMaxY(screenFrame) - (21 + screenMargin) - snapMargin)){
-		// Prevent dragging into the menu bar area
-		newOrigin.y = NSMaxY(screenFrame) - windowFrame.size.height - (21 + screenMargin);
+    // Prevent dragging into the menu bar area
+    newOrigin.y = NSMaxY(screenFrame) - windowFrame.size.height - (21 + screenMargin);
   }
   else if (newOrigin.y < NSMinY(screenFrame) + screenMargin + snapMargin) {
-      // Prevent dragging off bottom of screen
-      newOrigin.y = NSMinY(screenFrame) + screenMargin;
+    // Prevent dragging off bottom of screen
+    newOrigin.y = NSMinY(screenFrame) + screenMargin;
   }
   if (newOrigin.x < NSMinX(screenFrame) + screenMargin + snapMargin) {
-      // Prevent dragging off left of screen
-      newOrigin.x = NSMinX(screenFrame) + screenMargin;
+    // Prevent dragging off left of screen
+    newOrigin.x = NSMinX(screenFrame) + screenMargin;
   }
   else if (newOrigin.x > NSMaxX(screenFrame) - screenMargin - windowWidth - snapMargin) {
-      // Prevent dragging off right of screen
-      newOrigin.x = NSMaxX(screenFrame) - screenMargin - windowWidth;
+    // Prevent dragging off right of screen
+    newOrigin.x = NSMaxX(screenFrame) - screenMargin - windowWidth;
   }
   
   [self setFrameOrigin:newOrigin];

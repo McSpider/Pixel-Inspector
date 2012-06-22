@@ -12,7 +12,7 @@
 
 @interface Pixel_InspectorAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate> {
 @private
-  NSWindow *window;
+  TransparentWindow *window;
   TransparentWindow *fullWindow;
 
   IBOutlet DelegateView *fullView;
@@ -23,7 +23,7 @@
   IBOutlet NSTextField *infoMessage;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet TransparentWindow *window;
 
 - (IBAction)testColor:(id)sender;
 - (void)closeColorWindow;

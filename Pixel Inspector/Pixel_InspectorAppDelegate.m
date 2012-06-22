@@ -19,7 +19,7 @@
   colorMode = NO;
   [[self window] center];
   [[self window] setFrameOrigin:NSMakePoint(self.window.frame.origin.x, [[NSScreen mainScreen] frame].size.height * 0.4)];
-  //[[self window] setLevel:NSNormalWindowLevel];
+  [[self window] setLevel:NSNormalWindowLevel];
   
   fullWindow = [[TransparentWindow alloc] initWithContentRect:[[NSScreen mainScreen] frame]
                                                      styleMask:NSBorderlessWindowMask
@@ -34,10 +34,9 @@
   
   [fullWindow setContentView:fullView];
   [fullWindow setAlphaValue:0.0f];
-  [fullWindow orderFront:nil];
-  [fullWindow setDelegate:self];  
+  [fullWindow setDelegate:self];
   
-  //[self.window makeKeyAndOrderFront:self];
+  [self.window makeKeyAndOrderFront:self];
 }
 
 - (void)dealloc
@@ -85,7 +84,7 @@
   else if (tag == 5) {
     if ([infoMessage alphaValue] != 0.0f) {
       [infoMessage setHidden:NO];
-      [self performSelector:@selector(hideInfoMessage) withObject:nil afterDelay:4];
+      [self performSelector:@selector(hideInfoMessage) withObject:nil afterDelay:2.5];
     }
     [fullWindow setBackgroundColor:[NSColor colorWithDeviceHue:hue / 16.0f saturation:saturation / 4.0f brightness:1.0 alpha:1.0]];
     colorMode = YES;
@@ -101,6 +100,8 @@
 {
   [NSCursor unhide];
   [[fullWindow animator] setAlphaValue:0.0f];
+  // We should probably close the full window after fading it out
+  [self.window makeKeyAndOrderFront:self];
   colorMode = NO;
 }
 
