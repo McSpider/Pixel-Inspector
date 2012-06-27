@@ -287,7 +287,7 @@
 				<string key="NSClassName">NSFontManager</string>
 			</object>
 			<object class="NSCustomView" id="152169642">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -296,8 +296,6 @@
 						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{15, 38}, {570, 24}}</string>
 						<reference key="NSSuperview" ref="152169642"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:3936</string>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="936594763">
@@ -329,8 +327,6 @@
 					</object>
 				</object>
 				<string key="NSFrameSize">{600, 100}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="94086083"/>
 				<string key="NSReuseIdentifierKey">_NS:499</string>
 				<string key="NSClassName">DelegateView</string>
@@ -339,7 +335,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{585, 411}, {256, 61}}</string>
 				<int key="NSWTFlags">1685586944</int>
-				<string key="NSWindowTitle">Window</string>
+				<string key="NSWindowTitle">Pixel Inspektor</string>
 				<string key="NSWindowClass">TransparentWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
@@ -1519,7 +1515,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>DelegateView</string>
 							<string>NSTextField</string>
-							<string>NSWindow</string>
+							<string>TransparentWindow</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -1542,7 +1538,7 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">window</string>
-								<string key="candidateClassName">NSWindow</string>
+								<string key="candidateClassName">TransparentWindow</string>
 							</object>
 						</object>
 					</object>

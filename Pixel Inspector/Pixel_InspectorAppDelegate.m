@@ -35,6 +35,7 @@
   [fullWindow setContentView:fullView];
   [fullWindow setAlphaValue:0.0f];
   [fullWindow setDelegate:self];
+  [fullWindow setParentWindow:self.window];
   
   [self.window makeKeyAndOrderFront:self];
 }
@@ -101,6 +102,7 @@
   [NSCursor unhide];
   [[fullWindow animator] setAlphaValue:0.0f];
   // We should probably close the full window after fading it out
+  // If we could use a custom NSWindowAnimationBehavior then we could just do [fullWindow orderOut:self] and skip all the trickery with opacity, etc.
   [self.window makeKeyAndOrderFront:self];
   colorMode = NO;
 }
